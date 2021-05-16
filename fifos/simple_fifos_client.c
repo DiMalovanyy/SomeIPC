@@ -16,7 +16,7 @@
 int main(int argc, char** argv) {
     
     
-    int fd = open(fifo_server_name, O_WRONLY);
+    int fd = open(simple_fifo_server_name, O_WRONLY);
     if (fd == -1) {
         ErrorExit("Open");
     }
